@@ -1,0 +1,10 @@
+stages:
+  - test
+
+run-hello:
+  stage: test
+  image: alpine:3.18     # лёгкий Linux-контейнер
+  script:
+    - echo "Running Hello Script..."
+    - ./hello.sh
+
